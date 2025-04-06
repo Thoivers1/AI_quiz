@@ -35,7 +35,7 @@ $response = curl_exec($ch);
 
 if (curl_errno($ch)) {
      echo json_encode(["question" => "Error calling OpenAI", "options" => [], "answer" => ""]);
-    exit;
+     exit;
 }
 
 $data = json_decode($response, true);
